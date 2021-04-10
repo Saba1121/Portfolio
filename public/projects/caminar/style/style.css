@@ -1,0 +1,203 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  transition: 1000s background;
+}
+body::-webkit-scrollbar {
+  background-color: #282828;
+  width: 0.5vw;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #646464;
+}
+
+section.header {
+  width: 100vw;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+}
+section.header .container {
+  text-align: center;
+}
+section.header .container h1 {
+  font-weight: 900;
+}
+
+section.main {
+  width: 85vw;
+  margin: auto;
+}
+section.main .container img {
+  width: 100%;
+}
+section.main .container section.text1 {
+  padding: 50px 0;
+  background-color: white;
+}
+section.main .container section.text1 .container .header {
+  padding: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+section.main .container section.text1 .container .header hr {
+  width: 20%;
+  margin: 15px auto;
+  color: #c8c8c8;
+}
+section.main .container section.text1 .container .header h6 {
+  color: #c8c8c8;
+}
+section.main .container section.text1 .container .text {
+  margin: 30px 0 0 0;
+  background-color: rgba(200, 200, 200, 0.2);
+  padding: 50px 50px;
+  text-align: justify;
+  line-height: 30px;
+}
+section.main .container section.gallery1 {
+  padding: 150px 0;
+  background-color: #282828;
+}
+section.main .container section.gallery1 .container {
+  width: 90%;
+  margin: auto;
+}
+section.main .container section.gallery1 .container .header {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #141414;
+  padding: 40px 0;
+}
+section.main .container section.gallery1 .container .header hr {
+  width: 10%;
+  margin: 20px auto;
+  border-color: #282828;
+}
+section.main .container section.gallery1 .container .header h1 {
+  color: white;
+}
+section.main .container section.gallery1 .container .header h6 {
+  color: #3c3c3c;
+}
+section.main .container section.gallery1 .container .images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+section.main .container section.gallery2 .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+section.main .container section.gallery2 .container .imgbox img {
+  width: 100%;
+}
+section.main .container section.gallery2 .container .text {
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 0 50px;
+  font-size: 0.9rem;
+}
+section.main .container section.gallery2 .container .text h1 {
+  padding: 15px 0;
+}
+section.main .container section.gallery2 .container .text:nth-child(3) {
+  text-align: right;
+  background-color: #1e1e1e;
+  color: gainsboro;
+}
+section.main .container section.footer {
+  margin: 0 0 200px 0;
+}
+section.main .container section.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30vh;
+  background-color: #282828;
+}
+section.main .container section.footer .container a {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+
+  section.main {
+    width: 90vw;
+  }
+  section.main .container section.gallery1 .container .images {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  section.main .container section.gallery2 .container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  section.main .container section.gallery2 .container .text {
+    padding: 50px;
+  }
+}
+@media (min-width: 1500px) {
+  html {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,44 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+.header p {
+    cursor: pointer;
+}
+
+.header .left .name {
+    font-weight: 200;
+}
+
+.header .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header .right *:first-child {
+    font-weight: 200;
+    padding: 0 2rem 0 0;
+}
+
+@media(max-width: 768px) {
+    .header {
+        padding: 2rem 2rem;
+    }
+}

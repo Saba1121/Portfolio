@@ -1,0 +1,217 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0.5vw;
+  background-color: white;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #969696;
+}
+
+section.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/slider-1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 54% 20%;
+}
+section.header .container {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+section.header .container nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+section.header .container nav h1 {
+  border: solid 2px black;
+  padding: 10px 15px;
+  margin: 20px auto;
+  font-size: 1.5rem;
+}
+section.header .container .main {
+  color: white;
+}
+section.header .container .main h1 {
+  font-size: 4.5rem;
+}
+section.header .container .main button {
+  padding: 18px 80px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  border: solid 2px white;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+section.header .container .main button:hover {
+  background-color: white;
+  color: black;
+}
+
+section.gallery-1 .container {
+  text-align: center;
+}
+section.gallery-1 .container .text-main {
+  width: 95%;
+  margin: auto;
+  padding: 150px 0;
+  font-size: 1.3rem;
+}
+section.gallery-1 .container .images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.gallery-1 .container .images .image img {
+  width: 100%;
+}
+section.gallery-1 .container .images .text {
+  font-size: 0.8rem;
+}
+section.gallery-1 .container .images .text p {
+  padding: 25px;
+}
+
+section.gallery-2 .container .text {
+  padding: 150px 0;
+  width: 70%;
+  margin: auto;
+}
+section.gallery-2 .container .text h1 {
+  font-size: 2rem;
+}
+section.gallery-2 .container .text p {
+  padding: 40px 0;
+}
+section.gallery-2 .container .image {
+  width: 100%;
+}
+section.gallery-2 .container .image img {
+  width: 100%;
+}
+
+section.chefs {
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+section.chefs .container .text h1 {
+  font-size: 3rem;
+  padding: 150px 0;
+}
+section.chefs .container .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+section.chefs .container .cards .card {
+  margin: auto;
+}
+section.chefs .container .cards .card img {
+  width: 40%;
+  border-radius: 10000px;
+}
+section.chefs .container .cards .card p {
+  padding: 30px 30px;
+}
+
+section.footer .container {
+  width: 100vw;
+  height: 20vh;
+  background-color: #282828;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section.footer .container a {
+  color: white;
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 10px;
+  }
+
+  section.gallery-1 .container .images {
+    width: 80%;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  section.gallery-1 .container .images .text {
+    padding: 40px 0;
+    font-size: 1.3rem;
+  }
+
+  section.gallery-2 .container .text {
+    font-size: 1.3rem;
+  }
+
+  section.chefs .container .cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  section.chefs .container .cards .card {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 30px;
+  }
+}

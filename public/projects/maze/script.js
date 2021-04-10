@@ -1,0 +1,1 @@
+document.documentElement.style.setProperty('--bodyHeight', `${window.innerHeight}px`);

@@ -1,0 +1,36 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.contact .contacts {
+    padding: 4rem 0 0 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.contact .contacts img {
+    /* width: 8rem;
+    margin: auto; */
+    width: 60%;
+    margin: auto;
+}
+
+@media(max-width: 768px) {
+    .contact .contacts {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 7rem;
+    }
+
+    .contact .contacts a {
+        text-align: center;
+    }
+}

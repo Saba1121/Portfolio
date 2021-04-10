@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --header-height: 20px;
+    --header-distance: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    width: 100vw;
+    background-color: #457fba;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header ul li {
+    padding: var(--header-height) 40px;
+    color: white;
+}
+
+.header ul li:hover {
+    background-color: rgba(255, 255, 255);
+    cursor: pointer;
+    color: black;
+}
+
+.header p {
+    color: white;
+    padding: var(--header-height) 30px;
+}
+
+.header p:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    color: black;
+}
+
+
+.main {
+    padding: 50px 0;
+    width: 50%;
+    margin: auto;
+}
+
+.main .input {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 25px 25px;
+    background-color: rgba();
+    background-color: white;
+}
+
+.main .input input {
+    padding: 5px 5px;
+    outline: none;
+}
+
+.main .posts {
+    width: 100%;
+}
+
+.main .posts .post {
+    margin: 30px 0;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: white;
+}
+
+.main .posts .post > * {
+    padding: 8px 0;
+    font-weight: 200;
+    word-break: break-all;
+}
+
+
+@media(max-width: 760px) {
+    html {
+        font-size: 13px;
+    }
+
+    .header ul li {
+        padding: var(--header-height) 25px;
+    }
+
+    .main {
+        width: 90%;
+    }
+}

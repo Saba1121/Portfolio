@@ -1,0 +1,36 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.about .skills {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 1fr 4rem 1fr 4rem 1fr 4rem 1fr 4rem 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    text-align: center;
+}
+
+.about .skill img {
+    width: 80%;
+    margin: auto;
+}
+
+
+@media(max-width: 768px) {
+    .about .skills {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 3rem;
+    }
+
+    .about .skill img {
+        width: 60%;
+    }
+}

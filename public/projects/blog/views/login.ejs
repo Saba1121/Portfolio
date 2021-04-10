@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/login/style.css">
+</head>
+<body>
+
+    <div class="loadingScreen"></div>
+    
+    <div class="main">
+        
+        <div class='left'>
+            <img src="/login/image.jpg" alt="">
+        </div>
+
+        <div class='right'>
+           
+            <h1>LOGIN</h1>
+
+            <form action="/login" method="POST" id="loginForm">
+                <input type="text" name="email" placeholder="email" id="email" required>
+            
+                <input type="password" name="password" placeholder="password" id="password" required>
+              
+                <input type="submit">
+
+                <a href="../register">Register</a>
+
+                <p class="errors"></p>
+            </form>
+        </div>
+
+    </div>
+
+   
+
+    <script src="/login/script.js"></script>
+</body>
+</html>

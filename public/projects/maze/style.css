@@ -1,0 +1,100 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+:root {
+    --bodyHeight: 0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Comic Sans MS;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: var(--bodyHeight);
+    width: 100vw;
+    background-color: rgb(40, 40, 40);
+    overflow: hidden;
+}
+
+
+
+div.main {
+    color: white;
+    min-height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    min-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.startGame {
+    width: 50%;
+    margin: auto;
+    padding: 10px 0;
+    background-color: transparent;
+    color: white;
+    border: solid 2px #e84118;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: .6s background-color;
+    -o-transition: .6s background-color;
+    transition: .6s background-color;
+}
+
+.startGame:hover {
+    background-color: #e84118;
+}
+
+.settings {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+}
+
+
+@media(max-width: 760px) {
+    html {
+        font-size: 13px;
+    }
+}

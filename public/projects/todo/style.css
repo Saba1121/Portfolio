@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+    /* background-color: rgb(240,240,240); */
+}
+
+section.app .container {
+    width: 50%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+section.app .container .top {
+    width: 100%;
+    display: grid;
+    /* justify-content: space-evenly; */
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    /* min-height: 12vh; */
+    min-height: 80px;
+    background-color: rgba(231, 76, 60,1.0);
+    padding: 0 5%;
+}
+
+section.app .container .top input {
+    width: 80%;
+    height: 35%;
+    justify-self: end;
+    margin: 0 15px 0 0;
+}
+
+section.app .container .top button {
+    width: 80%;
+    height: 35%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .1s transform;
+}
+
+section.app .container .top button:active {
+    transform: translate(3px, 3px);
+}
+
+section.app .container .bottom {
+    background-color: rgba(230, 230, 230, 1.0);
+}
+
+section.app .container .bottom ul li {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-all;
+    border-bottom: solid 1px rgb(210,210,210);
+    user-select: none;
+    transition: .5s background-color;
+}
+
+section.app .container .bottom ul li:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+section.app .container .bottom ul li span {
+    cursor: pointer;
+    font-weight: 900;
+    text-decoration: solid;
+    margin: 0 0 0 20px;
+}
+
+@media (max-width: 760px) {
+    section.app .container {
+        width: 95%;
+    }
+}

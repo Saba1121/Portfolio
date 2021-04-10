@@ -1,13 +1,59 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 200;
+}
+
+body {
+  overflow-x: hidden;
+  height: var(--bodyHeight);
+  font-family: 'Karla', sans-serif, 'Roboto', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6rem;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@media(max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media(min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 2000px) {
+  html {
+    font-size: 35px;
+  }
 }

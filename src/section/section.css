@@ -1,0 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.section {
+    padding: 0 0 3rem 0;
+}
+
+.sectionHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 0 0 2rem 0;
+}
+
+.sectionHeader * {
+    margin: 0 1rem 0 0;
+}

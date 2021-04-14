@@ -28,7 +28,7 @@ function About({ aboutPosition, setAboutPosition}) {
 
 const DisplaySkills = () => skills.map((x, index) => (
     <div key={index} className="skill">
-        <img src={require(`../../icons/${x}.svg`).default} alt={x} />
+        <img src={require(`../../icons/${x}.svg`).default} alt={x} title={x} />
     </div>
 ))
 

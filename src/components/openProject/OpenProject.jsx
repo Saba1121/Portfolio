@@ -16,6 +16,7 @@ function OpenProject({ projectIndex, projectPosition, setProjectPosition }) {
     const links = () => (
         <>
             {  project.url && <a target='_blank' href={project.url}>visit</a> }
+            {  project.url && project.github && <span>|</span>}
             {  project.github && <a target='_blank' href={project.github}>github</a> }
         </>
     )
@@ -43,7 +44,7 @@ const DisplayTechnologies = ({ project }) => project.technologies ? project.tech
 
     return (
         <div key={index} className='icon'>
-            <img src={image} alt=""/>
+            <img src={image} alt={x} title={x} />
         </div>
     )
 }) : false;

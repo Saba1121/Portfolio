@@ -19,6 +19,14 @@
     padding: 0 0 2rem 0;
 }
 
+/* .sectionHeader a::after { 
+    content: '';
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: grey;
+} */
+
 .sectionHeader * {
     margin: 0 1rem 0 0;
 }

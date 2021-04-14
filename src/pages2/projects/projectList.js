@@ -1,7 +1,7 @@
 export default [
     {
         name: 'jstots',
-        github: '',
+        github: 'https://github.com/Saba1121/js-to-typescript-package',
         url: 'https://js-to-typescript.netlify.app',
         // image: 'devicer.space.png'
         image: 'jstotslogo.png',
@@ -10,7 +10,7 @@ export default [
     },
     {
         name: 'Devicer',
-        github: '',
+        github: 'https://github.com/Saba1121/Devicer',
         url: 'https://devicer.space',
         // image: 'devicer.space.png'
         image: 'devicerlogo6.png',
@@ -28,7 +28,7 @@ export default [
     },
     {
         name: 'Facebook Clone',
-        github: '',
+        github: 'https://github.com/Saba1121/Facebook-clone',
         url: 'https://facebook-clone-475bb.web.app/',
         // image: 'fbClone.jpg'
         image: 'fblogo2.png',
@@ -37,17 +37,11 @@ export default [
     },
     {
         name: 'URL Shortener',
-        github: 'https://github.com/Saba1121/URLShortener-Node',
+        github: 'https://github.com/Saba1121/url-shortener',
         url: '',
         image: 'urlShortener.jpg',
         description: 'URL shorteners are widely knows. They help to minimize long URL and turn it into a short one.',
         technologies: ['nodejs', 'mongodb']
-    },
-    {
-        name: 'Blog',
-        github: 'https://github.com/Saba1121/Node-Blog',
-        url: '',
-        image: 'blog.jpg'
     },
     {
         name: 'Maze Generator',
@@ -67,7 +61,7 @@ export default [
     },
     {
         name: 'Online Tic Tac Toe',
-        github: 'https://github.com/Saba1121/online-TicTacToe',
+        github: 'https://github.com/Saba1121/tictactoe-online',
         url: '',
         image: 'onlineTicTacToe.jpg',
         description: 'Online TicTacToe, where you get matched with a random person to play a game.',
